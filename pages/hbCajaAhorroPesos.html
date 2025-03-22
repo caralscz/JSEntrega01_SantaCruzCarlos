@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CoderHouse Entrega01 | Home Banking | Caja de ahorros en pesos</title>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="contenedorHeader">
+        <h1>
+            <img src="../assets/img/LogoHB.png" class="imgHB" alt="Home banking logo">
+            La nostra banca - Caja de ahorros en pesos
+        </h1>
+        <div>
+            <a href="../index.html" class="UnBoton">Ir al inicio</a>
+        </div>
+
+    </header>
+
+    <main class="contenedorMain">
+        <section class="contenedorCajaAhorro">
+            <h2>Caja de ahorro en pesos</h2>
+            <div>
+                <p> Bienvenido</p>
+                <br>
+                <p> Proximamente en esta pagina podra realizar operaciones</p>
+                <p> de deposito, extraccion y transferencias.</p>
+                <br><br>
+            </div>
+
+            <div class="cajaServicio">
+                <h2>Cuenta</h2>
+                <div class="cuentas">
+                    <div class="cuenta">
+                        <h3>Caja de Ahorro en Pesos</h3>
+                        <p>Saldo: $<span id="idSaldoCajaAhorro">0</span></p>
+                        <button onclick="botonDepositar('cajaAhorro')"
+                            id="id_botonDepositarCajaAhorro">Depositar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cajaServicio">
+                <h2>Transferencias</h2>
+                <form action="#" method="post" id="formularioTransferencias" class="formularioTransferencias">
+                    <label for="idCuentaDestino">Cuenta destino</label>
+                    <select name="cuentaDestino" id="idCuentaDestino">
+                        <option value="cajaAhorro">Caja de Ahorro en Pesos</option>
+                        <option value="cuentaCorriente">Cuenta Corriente</option>
+                    </select><br>
+                    <label for="idMonto">Monto</label>
+                    <input type="number" id="idMonto" name="txtMonto" placeholder="Ingrese el monto a transferir:"><br>
+                    <button type="submit" onclick="botonTransferirCuenta()"
+                        id="id_botonTransferirCuenta">Transferir</button><br>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contenedorFooter">
+        <div class="footerDivLogo">
+            <img src="../assets/img/LogoHB.png" class="imgHB" alt="Home banking logo">
+        </div>
+        <div class="footerDivTexto">
+            <p>Estudiando Java Script | CoderHouse entrega01 | Home Banking | 2025</p><br>
+            <p>Desarrollado por Carlos A. santa Cruz © Todos los derechos reservados</p><br>
+            <p>Comisión 86620 - Del 27/02/25 al 16/05/25 - Jueves 19:00 a 21:00h</p><br>
+            <p>Profesor CoderHouse : Julio Avantt</p><br>
+            <p>Adjunto o tutor CoderHouse: Alexis Coronel</p><br>
+        </div>
+    </footer>
+
+    <!-- Mis Java Script -->
+    <script src="../js/CajaAhorroScript.js"></script>
+
+
+</body>
+
+</html>

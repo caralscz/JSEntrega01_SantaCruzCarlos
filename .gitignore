@@ -1,0 +1,10 @@
+# archivos y carpetas a ignorar por git (que no queremos subir al repositorio)
+# si el nombre finaliza con /, ignora la carpeta y todo su contenido
+
+# contenedor de paginas que uso de apuntes
+#
+.Apuntes/
+
+# # archivos originales que los uso pero modificados
+# #
+# ./assets/img/.almacen/

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiando JS | CoderHouse entrega01 | Home Banking </title>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="contenedorHeader">
+        <h1>
+            <img src="../assets/img/LogoHB.png" class="imgHB" alt="Home banking logo">
+            La nostra banca - Cambio de divisas
+        </h1>
+        <div>
+            <a href="../index.html" class="UnBoton">Ir al inicio</a>
+        </div>
+    </header>
+
+    <main class="contenedorMain">
+        <section>
+            <div class="contenedorCambioDivisas">
+                <h2>Cambio de divisas</h2>
+                <div class="cambioDivisas">
+                    <div class="cambioDivisasUna">
+                        <h3>Dólar</h3>
+                        <p>Compra: $<span id="idCompraDolar">1286.50</span></p>
+                        <p>Venta: $<span id="idVentaDolar">1298.58</span></p>
+                    </div>
+                    <div class="cambioDivisasUna">
+                        <h3>Euro</h3>
+                        <p>Compra: $<span id="idCompraEuro">1389.13</span></p>
+                        <p>Venta: $<span id="idVentaEuro">1390.26</span></p>
+                    </div>
+                </div>
+                <p id="valorPesosArg">Valor de la operaci&oacute;n: 0<br>Debe ingresar una moneda</p>
+                <br><br>
+                <button class="UnBoton" onclick="iniciarSistemaMonedas();">Hacer otro cambio</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="contenedorFooter">
+        <div class="footerDivLogo">
+            <img src="../assets/img/LogoHB.png" class="imgHB" alt="Home banking logo">
+        </div>
+        <div class="footerDivTexto">
+            <p>Estudiando Java Script | CoderHouse entrega01 | Home Banking | 2025</p><br>
+            <p>Desarrollado por Carlos A. santa Cruz © Todos los derechos reservados</p><br>
+            <p>Comisión 86620 - Del 27/02/25 al 16/05/25 - Jueves 19:00 a 21:00h</p><br>
+            <p>Profesor CoderHouse : Julio Avantt</p><br>
+            <p>Adjunto o tutor CoderHouse: Alexis Coronel</p><br>
+        </div>
+    </footer>
+
+    <!-- Mis Java Script -->
+    <script src="../js/CambioDeDivisas.js"></script>
+
+</body>
+
+</html>

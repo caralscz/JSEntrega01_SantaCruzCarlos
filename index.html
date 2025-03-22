@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiando JS | CoderHouse entrega01 | Home Banking </title>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header class="contenedorHeader">
+        <div class="headerDivLogo">
+            <img src="./assets/img/LogoHB.png" class="imgHB" title="La nostra banca" alt="Home banking logo">
+            <h1>La nostra banca</h1>
+        </div>
+        <div class="headerDivIngresar">
+            <p>Home&nbsp;Banking</p>
+            <img src="./assets/img/icons_login.png" class="imgIngresarHB" title="Ingresar"
+                alt="Ingresar Home banking logo" onclick="ValidarUnUsuario();">
+        </div>
+
+    </header>
+
+    <main class="contenedorMain">
+        <section>
+            <div id="formularioIdentificacion" class="formularioIdentificacion">
+                <h2>Identificación del usuario</h2>
+                <br><br>
+                <p>Usuario: <span id="idNombreUsuario">Debe ingresar su nombre de usuario</span></p>
+                <p>Clave: <span id="idClave">Debe ingresar su clave</span></p>
+                <br><br>
+                <button type="submit" onclick="ValidarUnUsuario();" id="id_botonIngresarUnUsuario">&nbsp;&nbsp;Ingresar
+                    un usuario&nbsp;&nbsp;</button>
+            </div>
+        </section>
+
+        <section class="contenedorservicios" id="idServicios">
+            <h2>Servicios</h2>
+            <div>
+                <a href="./pages/hbCajaAhorroPesos.html" class="UnBoton">Caja de ahorro en pesos</a>
+                <a href="./pages/hbCambioDeDivisas.html" class="UnBoton">Cambio de divisas</a>
+            </div>
+        </section>
+ 
+        <section class="contenedorAviso" id="idcontenedorAviso">
+            <h2>CoderHouse Java Script - Comisión 86620</h2>
+            <p>Carlos A. santa Cruz</p>
+            <p>Profesor: Julio Avantt</p>
+            <p>Adjunto o tutor: Alexis Coronel</p>
+            <p>año 2025</p>
+            <br>
+            <p>Proyecto de Home banking - </p>
+            <br>
+            <p>En la entrega1 se implementan las funciones de esta página</p>
+            <p> en Java Script para cumplir los objetivos del ejercicio </p>
+            <p>&nbsp;&nbsp;&nbsp; (por ejemplo los botones de servicios)</p>
+            <br>
+            <p>Funciones implementadas:</p><br>
+            <p>1) Debe hacer click en el ícono de ingresar, en la parte superior derecha</p>
+            <p>&nbsp;&nbsp;&nbsp; (Es una puerta con una flecha hacia adentro) </p>
+            <p>&nbsp;&nbsp;&nbsp; o en el botón "Ingresar un usuario"</p><br>
+
+            <p> Allí pedirá un nombre de usuario y password válidos</p>
+            <p>Los usuarios posibles son:</p>
+            <p>&nbsp;&nbsp;&nbsp;"u1", "p1"</p>
+            <p>&nbsp;&nbsp;&nbsp;"usuario1", "password1"</p>
+            <p>&nbsp;&nbsp;&nbsp;"usuario2", "password2"</p><br>
+
+            <p>2) Se verifica que sean correctos</p><br>
+            <p>3) Si son correctos se habilitan los botones de los servicios</p>
+            <p> y si son incorrectos se deshabilitan</p><br>
+
+            <p>4) Habilitará dos funciones: </p>
+            <p> - Función de Cambio de divisas es la que está implementada y </p>
+            <p> - Función de Caja de ahorro que está pendiente de implementación</p><br><br>
+        </section>
+    </main>
+
+    <footer class="contenedorFooter">
+        <div class="footerDivLogo">
+            <img src="./assets/img/LogoHB.png" class="imgHB" alt="Home banking logo">
+        </div>
+        <div class="footerDivTexto">
+            <p>Estudiando Java Script | CoderHouse entrega01 | Home Banking | 2025</p><br>
+            <p>Desarrollado por Carlos A. santa Cruz © Todos los derechos reservados</p><br>
+            <p>Comisión 86620 - Del 27/02/25 al 16/05/25 - Jueves 19:00 a 21:00h</p><br>
+            <p>Profesor CoderHouse : Julio Avantt</p><br>
+            <p>Adjunto o tutor CoderHouse: Alexis Coronel</p><br>
+        </div>
+    </footer>
+
+    <!-- Mis Java Script -->
+    <script src="./js/IndexScript.js"></script>
+
+</body>
+
+</html>

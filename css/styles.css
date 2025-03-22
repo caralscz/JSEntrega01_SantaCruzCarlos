@@ -1,0 +1,216 @@
+/* 
+Estilos para el sitio Home Banking 
+Coder house entrega 01 - 2025
+Los elementos que tengan las class="" debe empezar con . (punto) 
+
+
+reset de CSS de los elementos de default que aplican los navegadores 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+body {
+    background-color: rgb(221, 188, 188);
+}
+
+/* =========================================== 
+*
+* 
+*    Estilos para el Header                      
+* 
+*
+*  =========================================== */
+
+.contenedorHeader, .headerDivLogo, .headerDivIngresar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0%;
+    max-width: 80%;
+    background-color: rgb(247, 158, 158);
+    margin-top: .625rem;    
+    padding: 20px; 
+    text-align: center;
+        p{
+            font-size: 1.2rem;  /*19px*/
+            font-weight: 500;
+            color: black;
+            font-style: italic;
+        }
+        h1 {
+            font-weight: 700;
+            color: black;
+        } 
+}
+
+.imgHB {
+    /* el icono del banco en el H1 */
+    width: 3.125rem;    /* 50px */
+    margin-right: .625rem;
+    margin-left: .625rem;
+    border-radius: 0.625rem;
+}
+
+.imgIngresarHB {
+    /* el icono de ingresar */
+    height:1.5625rem;    /*25px */
+    margin-right: .625rem;
+    margin-left: .625rem;
+}
+/* =========================================== 
+*
+*
+* Estilos para el Main                      
+*
+*
+*  =========================================== */
+
+.contenedorMain {
+    margin-top: 0%;
+    max-width: 80%;
+    background-color: rgb(250, 230, 230);
+    margin-top: .625rem;    /* 10px */
+    /* padding: 20px; */
+}
+.formularioIdentificacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: rgb(250, 230, 230);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1rem;
+}
+#idNombreUsuario, #idClave{
+    color: rgb(150, 142, 142);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.contenedorCambioDivisas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: .0625rem solid black;
+    border-radius: 1rem;
+    background-color: rgb(250, 230, 230);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1rem;
+    .cambioDivisas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 1rem;
+        /* border: .0625rem solid black;
+        border-radius: 1rem; */
+        background-color: rgb(250, 230, 230);
+    }
+}
+.contenedorservicios, .contenedorAviso, .contenedorCajaAhorro, .cajaServicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: .0625rem solid black;
+    border-radius: 1rem;
+    background-color: rgb(250, 230, 230);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1rem;
+}
+.contenedorAviso{
+    align-items:normal; 
+    justify-content:left;
+}
+
+.UnBoton{
+    display: inline-block;
+    padding: .625rem 1.25rem;
+    background-color: #919496;
+    width: 9.375rem;    /*150px  30%; */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+.contenedorCajaAhorro, {
+    /* dejo aquí en color para probar que se aplica bien (es mi prueba)*/
+    background-color: rgb(250, 230, 230); 
+}
+.cajaServicio{
+    justify-content: space-around;
+    width: 90%;
+    background-color: rgb(241, 221, 221);
+}
+
+/* =========================================== */
+/**/
+/* Estilos para el footer                      */
+/* En el curso html en scss ver _footer.scss    */
+/**/
+/* =========================================== */
+
+.contenedorFooter {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    /* lo modificamos en _media576.scss y en _media440.scss */
+    flex: 0 1 auto;
+    margin-top: 0%;
+
+    max-width: 80%;
+    background-color: rgb(247, 158, 158);
+    margin-top: .625rem;
+    /* 10px */
+    /* padding: 20px; */
+}
+
+.footerDivLogo {
+    width: 20%;
+    align-content: space-around;
+    /* flex: 0 1 auto;     Mantiene el tamaño natural de cada contenedor */
+    text-align: left;
+
+    /* // Centra la imagen horizontalmente dentro de su contenedor */
+    img {
+        /* el icono de la izquierda del pie de pagina */
+        width: 5.5rem;
+        /* //88px */
+        border-radius: 0.625rem;
+        /* //10px */
+        opacity: 0.7;
+        /* // Ajusta el valor de opacidad entre 0 y 1 */
+        margin: .3rem;
+        /* // 4.8px */
+    }
+}
+
+.footerDivTexto {
+    text-align: left;
+    font-size: 0.75rem;
+    /* // 12px; */
+    max-width: 80%;
+}
