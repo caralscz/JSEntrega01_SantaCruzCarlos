@@ -1,21 +1,37 @@
-CoderHouse
-Curso de Java Script  -  Entrega 01
-Comisión 86620
+<h1>Curso de Java Script  -  Entrega 01 - Comisión 86620</h1>
+<h2>CoderHouse</h2>
 
 Carlos A. santa Cruz
+
+
 Profesor: Julio Avantt
+
 Adjunto o tutor: Alexis Coronel
+
+
 22 de marzo de 2025
+
 
 Proyecto de Home banking - 
 
+
 El proyecto tiene 3 HTML 
+
+
 El index.html y hbCambioDeDivisas.html  que están implementadas con JS
+
+
 y la página  hbCajaDeAhorroPesos.html  que no está implementada
 
+
 En la entrega1 se implementan las funciones de las páginas
+
+
 en Java Script para cumplir los objetivos del ejercicio 
+
+
 (por ejemplo los botones de servicios)
+
 
 Servicios implementados: Cambio de divisas
 
