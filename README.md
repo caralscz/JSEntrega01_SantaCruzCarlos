@@ -1,9 +1,6 @@
 CoderHouse
-
 Curso de Java Script  -  Entrega 01
-
 Comisión 86620
-
 
 Carlos A. santa Cruz
 Profesor: Julio Avantt
